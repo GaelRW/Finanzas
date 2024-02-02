@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.inv-bg {
+    text-align: center;
+    color: v.$blanco;
+    background-color: v.$primario;
+    padding: 2.2rem;
+}
+
+.texto-inv {
+    font-family: v.$fuente_principal;
+    font-weight: 400;
+}
+
+.grid-inv {
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+}
+
+.img-inv {
+    margin-top: 3rem;
+}

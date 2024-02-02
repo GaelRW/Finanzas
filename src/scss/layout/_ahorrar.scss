@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.titulo-ahorro {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.titulos {
+    h2 {
+        text-align: center;
+    }
+}
+
+.ahorrar {
+    background-image: url(../../build/img/ahorro.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 7rem 5rem 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2, p{
+        margin-top: 5rem;
+        text-align: center;
+        color: v.$blanco;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    p {
+        text-transform: uppercase;
+        font-family: v.$fuente_titulo;
+        border-bottom: 3px v.$blanco solid;
+    }
+}
+
+.contenido_ahorro {
+    h3 {
+        font-family: v.$fuente_principal;
+        font-weight: 400;
+        font-size: 2.4rem;
+        margin-top: 3rem;
+    }
+}
+
+.ul-ahorro {
+    li {
+        font-size: 2.4rem;
+        border-bottom: 1px v.$gris solid;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+}

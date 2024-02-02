@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+
+.footer {
+    color: v.$blanco;
+    text-align: center;
+    background-color: v.$primario;
+    padding: 2rem;
+    h3 {
+        margin: 2rem 0 2rem 0;
+    }
+    h4 {
+        font-size: 2.5rem;
+        margin: 3rem 0 2rem 0;
+        font-family: v.$fuente_principal;
+    }
+}

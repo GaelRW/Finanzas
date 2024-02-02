@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+section {
+    img {
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        margin: 0;
+    }
+    padding-top: 5rem;
+    p {
+        font-family: v.$fuente_principal;
+        font-weight: 500;
+        margin-top: 1.8rem;
+    }
+}
+
+.titulos {
+    h3 {
+        text-align: center;
+        margin-bottom: 4rem;
+        font-size: 3.4rem;
+    }
+}
+
+@include m.tablet {
+    .contenedor-consejos {
+        @include m.grid(3, 2rem)
+    }
+}
+
+.border {
+    border-bottom: 2px solid red;
+}
+
+.pasos {
+        margin-top: 6rem;
+        margin-bottom: 0;
+}
+
+.grid_pasos {
+    margin-bottom: 2rem;
+    border-bottom: 1.5px v.$gris solid;
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
